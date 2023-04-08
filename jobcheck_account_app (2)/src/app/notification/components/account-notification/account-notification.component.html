@@ -1,0 +1,430 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+
+
+
+<div class=" m-10 px-16  ">
+    <div><h1 class="text-4xl font-bold ">Notification</h1>
+    <p class="text-base text-gray-500 font-normal">Manage your notification data</p>
+    </div>
+
+    <!-- Main content -->
+    <div class="w-full bg-white mt-6 p-5 rounded-lg">
+ <h2 class="text-2xl font-semibold text-gray-900">Notification Configuration</h2>
+ <div class="flex mt-10 space-x-6">
+    <p class="hover:text-[#0175A2] text-base font-semibold cursor-pointer hover:underline hover:underline-offset-4">Account Notification</p>
+    <p class="hover:text-[#0175A2] text-base font-semibold cursor-pointer hover:underline hover:underline-offset-4">Job Notification</p>
+    <p class="hover:text-[#0175A2] text-base font-semibold cursor-pointer hover:underline hover:underline-offset-4">Profile Notification</p>
+ </div>
+
+ <!-- 2nd main box -->
+ <div class="  flex  mt-10 space-x-2">
+    <div class=" left w-1/4  space-y-3">
+        <div class="flex items-center px-2 py-1 hover:bg-[#F0F9FF] m-2 rounded-lg space-x-6">
+            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.5" width="35" height="35" rx="8" fill="url(#paint0_linear_2424_33389)"/>
+                <path d="M13.5 17C13.7833 17 14.021 16.904 14.213 16.712C14.405 16.52 14.5007 16.2827 14.5 16C14.5 15.7167 14.404 15.479 14.212 15.287C14.02 15.095 13.7827 14.9993 13.5 15C13.2167 15 12.979 15.096 12.787 15.288C12.595 15.48 12.4993 15.7173 12.5 16C12.5 16.2833 12.596 16.521 12.788 16.713C12.98 16.905 13.2173 17.0007 13.5 17ZM17.5 17C17.7833 17 18.021 16.904 18.213 16.712C18.405 16.52 18.5007 16.2827 18.5 16C18.5 15.7167 18.404 15.479 18.212 15.287C18.02 15.095 17.7827 14.9993 17.5 15C17.2167 15 16.979 15.096 16.787 15.288C16.595 15.48 16.4993 15.7173 16.5 16C16.5 16.2833 16.596 16.521 16.788 16.713C16.98 16.905 17.2173 17.0007 17.5 17ZM21.5 17C21.7833 17 22.021 16.904 22.213 16.712C22.405 16.52 22.5007 16.2827 22.5 16C22.5 15.7167 22.404 15.479 22.212 15.287C22.02 15.095 21.7827 14.9993 21.5 15C21.2167 15 20.979 15.096 20.787 15.288C20.595 15.48 20.4993 15.7173 20.5 16C20.5 16.2833 20.596 16.521 20.788 16.713C20.98 16.905 21.2173 17.0007 21.5 17ZM7.5 28V10C7.5 9.45 7.696 8.979 8.088 8.587C8.48 8.195 8.95067 7.99934 9.5 8H25.5C26.05 8 26.521 8.196 26.913 8.588C27.305 8.98 27.5007 9.45067 27.5 10V22C27.5 22.55 27.304 23.021 26.912 23.413C26.52 23.805 26.0493 24.0007 25.5 24H11.5L7.5 28ZM9.5 23.175L10.675 22H25.5V10H9.5V23.175Z" fill="white"/>
+                <defs>
+                <linearGradient id="paint0_linear_2424_33389" x1="17.5" y1="0.5" x2="17.5" y2="35.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#082641" stop-opacity="0.68"/>
+                <stop offset="0.200234" stop-color="#072037" stop-opacity="0.76"/>
+                <stop offset="0.53708" stop-color="#061B2E" stop-opacity="0.88"/>
+                <stop offset="1" stop-color="#03121F"/>
+                </linearGradient>
+                </defs>
+                </svg>
+                <p class="text-[13px] font-medium text-[#001737]">SMS</p>
+        </div>
+        <div class="flex items-center px-2 py-1 hover:bg-[#F0F9FF] m-2 rounded-lg space-x-6">
+            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.5" width="35" height="35" rx="8" fill="url(#paint0_linear_2424_33395)"/>
+                <path d="M17.5 28C16.1333 28 14.8417 27.7373 13.625 27.212C12.4083 26.6867 11.3457 25.97 10.437 25.062C9.529 24.154 8.81233 23.0917 8.287 21.875C7.76167 20.6583 7.49933 19.3667 7.5 18C7.5 16.6167 7.76267 15.3207 8.288 14.112C8.81333 12.9033 9.53 11.8453 10.438 10.938C11.346 10.0293 12.408 9.31267 13.624 8.788C14.84 8.26333 16.132 8.00067 17.5 8C18.8833 8 20.1793 8.26267 21.388 8.788C22.5967 9.31333 23.6547 10.03 24.562 10.938C25.4707 11.846 26.1873 12.9043 26.712 14.113C27.2367 15.3217 27.4993 16.6173 27.5 18V19.45C27.5 20.4333 27.1627 21.271 26.488 21.963C25.8133 22.655 24.984 23.0007 24 23C23.4 23 22.8417 22.8667 22.325 22.6C21.8083 22.3333 21.3833 21.9833 21.05 21.55C20.6 22 20.0707 22.3543 19.462 22.613C18.8533 22.8717 18.1993 23.0007 17.5 23C16.1167 23 14.9373 22.5123 13.962 21.537C12.9867 20.5617 12.4993 19.3827 12.5 18C12.5 16.6167 12.9877 15.4373 13.963 14.462C14.9383 13.4867 16.1173 12.9993 17.5 13C18.8833 13 20.0627 13.4877 21.038 14.463C22.0133 15.4383 22.5007 16.6173 22.5 18V19.45C22.5 19.9333 22.65 20.3123 22.95 20.587C23.25 20.8617 23.6 20.9993 24 21C24.4 21 24.75 20.8623 25.05 20.587C25.35 20.3117 25.5 19.9327 25.5 19.45V18C25.5 15.8167 24.7123 13.9373 23.137 12.362C21.5617 10.7867 19.6827 9.99933 17.5 10C15.3167 10 13.4373 10.7877 11.862 12.363C10.2867 13.9383 9.49933 15.8173 9.5 18C9.5 20.1833 10.2877 22.0627 11.863 23.638C13.4383 25.2133 15.3173 26.0007 17.5 26H21.5C21.7833 26 22.021 26.096 22.213 26.288C22.405 26.48 22.5007 26.7173 22.5 27C22.5 27.2833 22.404 27.521 22.212 27.713C22.02 27.905 21.7827 28.0007 21.5 28H17.5ZM17.5 21C18.3333 21 19.0417 20.7083 19.625 20.125C20.2083 19.5417 20.5 18.8333 20.5 18C20.5 17.1667 20.2083 16.4583 19.625 15.875C19.0417 15.2917 18.3333 15 17.5 15C16.6667 15 15.9583 15.2917 15.375 15.875C14.7917 16.4583 14.5 17.1667 14.5 18C14.5 18.8333 14.7917 19.5417 15.375 20.125C15.9583 20.7083 16.6667 21 17.5 21Z" fill="white"/>
+                <defs>
+                <linearGradient id="paint0_linear_2424_33395" x1="17.5" y1="0.5" x2="17.5" y2="35.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#082641" stop-opacity="0.68"/>
+                <stop offset="0.200234" stop-color="#072037" stop-opacity="0.76"/>
+                <stop offset="0.53708" stop-color="#061B2E" stop-opacity="0.88"/>
+                <stop offset="1" stop-color="#03121F"/>
+                </linearGradient>
+                </defs>
+                </svg>
+          <p class="text-[13px] font-medium text-[#001737]">Email</p>                
+        </div>
+        <div class="flex items-center px-2 py-1 hover:bg-[#F0F9FF] m-2 rounded-lg space-x-6">
+            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.5" width="35" height="35" rx="8" fill="url(#paint0_linear_2424_33400)"/>
+                <path d="M25 14C26.93 14 28.5 12.43 28.5 10.5C28.5 8.57 26.93 7 25 7C23.07 7 21.5 8.57 21.5 10.5C21.5 12.43 23.07 14 25 14ZM26.5 22V15.79C26 15.93 25.5 16 25 16H24.5V22C24.5 23.66 23.16 25 21.5 25H13.5C11.84 25 10.5 23.66 10.5 22V14C10.5 12.34 11.84 11 13.5 11H19.5V10.5C19.5 10 19.57 9.5 19.71 9H13.5C10.74 9 8.5 11.24 8.5 14V22C8.5 24.76 10.74 27 13.5 27H21.5C24.26 27 26.5 24.76 26.5 22Z" fill="white"/>
+                <defs>
+                <linearGradient id="paint0_linear_2424_33400" x1="17.5" y1="0.5" x2="17.5" y2="35.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#082641" stop-opacity="0.68"/>
+                <stop offset="0.200234" stop-color="#072037" stop-opacity="0.76"/>
+                <stop offset="0.53708" stop-color="#061B2E" stop-opacity="0.88"/>
+                <stop offset="1" stop-color="#03121F"/>
+                </linearGradient>
+                </defs>
+                </svg>
+            <p class="text-[13px] font-medium text-[#001737]">Push Notification</p>    
+        </div>
+    </div>
+    <div class=" right w-3/4 ">
+    <div class="flex space-x-8 ">
+        <div class="w-1/2  ">
+            <div class="flex justify-between">
+               <div class="flex items-center space-x-1">
+                 <label class="relative inline-flex items-center  cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div class="w-7 h-4 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                  </label>
+                 <p class="text-base font-semibold text-gray-800">Create An Account</p>
+                
+
+  
+               </div>
+                <div class="flex">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.873 16.25H19.0332C17.4961 16.25 16.25 17.4961 16.25 19.0332V29.873C16.25 31.4102 17.4961 32.6562 19.0332 32.6562H29.873C31.4102 32.6562 32.6562 31.4102 32.6562 29.873V19.0332C32.6562 17.4961 31.4102 16.25 29.873 16.25Z" stroke="#1D2939" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M28.7256 16.25L28.75 15.0781C28.7479 14.3536 28.4592 13.6593 27.9468 13.1469C27.4345 12.6346 26.7402 12.3458 26.0156 12.3438H15.4688C14.6407 12.3462 13.8473 12.6762 13.2617 13.2617C12.6762 13.8473 12.3462 14.6407 12.3438 15.4688V26.0156C12.3458 26.7402 12.6346 27.4345 13.1469 27.9468C13.6593 28.4592 14.3536 28.7479 15.0781 28.75H16.25M24.4531 20.5469V28.3594M28.3594 24.4531H20.5469" stroke="#1D2939" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.5 12.5H14.5C13.397 12.5 12.5 13.397 12.5 14.5V26.5C12.5 27.603 13.397 28.5 14.5 28.5H17.5V32.267L23.777 28.5H30.5C31.603 28.5 32.5 27.603 32.5 26.5V14.5C32.5 13.397 31.603 12.5 30.5 12.5ZM30.5 26.5H23.223L19.5 28.733V26.5H14.5V14.5H30.5V26.5Z" fill="#1D2939"/>
+                            <path d="M24.3032 19.6894L22.9042 18.2914L19.0352 22.1554V23.5544H20.4342L24.3032 19.6894ZM24.6302 16.5664L26.0282 17.9654L24.9622 19.0314L23.5632 17.6334L24.6302 16.5664Z" fill="#1D2939"/>
+                            </svg>          
+                </div>
+            </div>
+            <!-- Receiver & freq -->
+            <div class="space-y-3">
+                <div>
+                    <p class="text-sm font-semibold text-gray-700">Receiver</p>
+                    <div class="flex justify-between">
+                        <h3 class="text-base font-normal text-[#065986] leading-8">Account Admin</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                            </svg>
+                            
+                    </div>
+                    <svg width="500" class="w-full"  height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                        </svg>
+                        
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-gray-700">Frequency</p>
+                    <div class="flex justify-between">
+                        <h3 class="text-base font-normal text-[#065986] leading-8">Instant</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                            </svg>
+                            
+                    </div>
+                    <svg width="500" class="w-full" height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                        </svg>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="w-1/2  ">
+            <div class="flex justify-between">
+               <div class="flex items-center space-x-1">
+                 <label class="relative inline-flex items-center  cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div class="w-7 h-4 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                  </label>
+                 <p class="text-base font-semibold text-gray-800">Activate An Account</p>
+                
+
+  
+               </div>
+                <div class="flex">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.873 16.25H19.0332C17.4961 16.25 16.25 17.4961 16.25 19.0332V29.873C16.25 31.4102 17.4961 32.6562 19.0332 32.6562H29.873C31.4102 32.6562 32.6562 31.4102 32.6562 29.873V19.0332C32.6562 17.4961 31.4102 16.25 29.873 16.25Z" stroke="#1D2939" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M28.7256 16.25L28.75 15.0781C28.7479 14.3536 28.4592 13.6593 27.9468 13.1469C27.4345 12.6346 26.7402 12.3458 26.0156 12.3438H15.4688C14.6407 12.3462 13.8473 12.6762 13.2617 13.2617C12.6762 13.8473 12.3462 14.6407 12.3438 15.4688V26.0156C12.3458 26.7402 12.6346 27.4345 13.1469 27.9468C13.6593 28.4592 14.3536 28.7479 15.0781 28.75H16.25M24.4531 20.5469V28.3594M28.3594 24.4531H20.5469" stroke="#1D2939" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.5 12.5H14.5C13.397 12.5 12.5 13.397 12.5 14.5V26.5C12.5 27.603 13.397 28.5 14.5 28.5H17.5V32.267L23.777 28.5H30.5C31.603 28.5 32.5 27.603 32.5 26.5V14.5C32.5 13.397 31.603 12.5 30.5 12.5ZM30.5 26.5H23.223L19.5 28.733V26.5H14.5V14.5H30.5V26.5Z" fill="#1D2939"/>
+                            <path d="M24.3032 19.6894L22.9042 18.2914L19.0352 22.1554V23.5544H20.4342L24.3032 19.6894ZM24.6302 16.5664L26.0282 17.9654L24.9622 19.0314L23.5632 17.6334L24.6302 16.5664Z" fill="#1D2939"/>
+                            </svg>          
+                </div>
+            </div>
+            <!-- Receiver & freq -->
+            <div class="space-y-3">
+                <div>
+                    <p class="text-sm font-semibold text-gray-700">Receiver</p>
+                    <div class="flex justify-between">
+                        <h3 class="text-base font-normal text-[#065986] leading-8">Account Admin</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                            </svg>
+                            
+                    </div>
+                    <svg width="500" class="w-full"  height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                        </svg>
+                        
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-gray-700">Frequency</p>
+                    <div class="flex justify-between">
+                        <h3 class="text-base font-normal text-[#065986] leading-8">Instant</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                            </svg>
+                            
+                    </div>
+                    <svg width="500" class="w-full" height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                        </svg>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    <svg width="1040" class="my-10 w-full" height="2" viewBox="0 0 1040 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1L1040 1" stroke="#98A2B3"/>
+        </svg>
+        <div class="flex space-x-8 ">
+            <div class="w-1/2  ">
+                <div class="flex justify-between">
+                   <div class="flex items-center space-x-1">
+                     <label class="relative inline-flex items-center  cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="w-7 h-4 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                      </label>
+                     <p class="text-base font-semibold text-gray-800">Create An Account</p>
+                    
+    
+      
+                   </div>
+                    <div class="flex">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.873 16.25H19.0332C17.4961 16.25 16.25 17.4961 16.25 19.0332V29.873C16.25 31.4102 17.4961 32.6562 19.0332 32.6562H29.873C31.4102 32.6562 32.6562 31.4102 32.6562 29.873V19.0332C32.6562 17.4961 31.4102 16.25 29.873 16.25Z" stroke="#1D2939" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M28.7256 16.25L28.75 15.0781C28.7479 14.3536 28.4592 13.6593 27.9468 13.1469C27.4345 12.6346 26.7402 12.3458 26.0156 12.3438H15.4688C14.6407 12.3462 13.8473 12.6762 13.2617 13.2617C12.6762 13.8473 12.3462 14.6407 12.3438 15.4688V26.0156C12.3458 26.7402 12.6346 27.4345 13.1469 27.9468C13.6593 28.4592 14.3536 28.7479 15.0781 28.75H16.25M24.4531 20.5469V28.3594M28.3594 24.4531H20.5469" stroke="#1D2939" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.5 12.5H14.5C13.397 12.5 12.5 13.397 12.5 14.5V26.5C12.5 27.603 13.397 28.5 14.5 28.5H17.5V32.267L23.777 28.5H30.5C31.603 28.5 32.5 27.603 32.5 26.5V14.5C32.5 13.397 31.603 12.5 30.5 12.5ZM30.5 26.5H23.223L19.5 28.733V26.5H14.5V14.5H30.5V26.5Z" fill="#1D2939"/>
+                                <path d="M24.3032 19.6894L22.9042 18.2914L19.0352 22.1554V23.5544H20.4342L24.3032 19.6894ZM24.6302 16.5664L26.0282 17.9654L24.9622 19.0314L23.5632 17.6334L24.6302 16.5664Z" fill="#1D2939"/>
+                                </svg>          
+                    </div>
+                </div>
+                <!-- Receiver & freq -->
+                <div class="space-y-3">
+                    <div>
+                        <p class="text-sm font-semibold text-gray-700">Receiver</p>
+                        <div class="flex justify-between">
+                            <h3 class="text-base font-normal text-[#065986] leading-8">Account Admin</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                </svg>
+                                
+                        </div>
+                        <svg width="500" class="w-full"  height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                            </svg>
+                            
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-gray-700">Frequency</p>
+                        <div class="flex justify-between">
+                            <h3 class="text-base font-normal text-[#065986] leading-8">Instant</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                </svg>
+                                
+                        </div>
+                        <svg width="500" class="w-full" height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                            </svg>
+                    </div>
+                    
+                </div>
+    
+            </div>
+            <div class="w-1/2  ">
+                <div class="flex justify-between">
+                   <div class="flex items-center space-x-1">
+                     <label class="relative inline-flex items-center  cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="w-7 h-4 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                      </label>
+                     <p class="text-base font-semibold text-gray-800">Activate An Account</p>
+                    
+    
+      
+                   </div>
+                    <div class="flex">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.873 16.25H19.0332C17.4961 16.25 16.25 17.4961 16.25 19.0332V29.873C16.25 31.4102 17.4961 32.6562 19.0332 32.6562H29.873C31.4102 32.6562 32.6562 31.4102 32.6562 29.873V19.0332C32.6562 17.4961 31.4102 16.25 29.873 16.25Z" stroke="#1D2939" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M28.7256 16.25L28.75 15.0781C28.7479 14.3536 28.4592 13.6593 27.9468 13.1469C27.4345 12.6346 26.7402 12.3458 26.0156 12.3438H15.4688C14.6407 12.3462 13.8473 12.6762 13.2617 13.2617C12.6762 13.8473 12.3462 14.6407 12.3438 15.4688V26.0156C12.3458 26.7402 12.6346 27.4345 13.1469 27.9468C13.6593 28.4592 14.3536 28.7479 15.0781 28.75H16.25M24.4531 20.5469V28.3594M28.3594 24.4531H20.5469" stroke="#1D2939" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.5 12.5H14.5C13.397 12.5 12.5 13.397 12.5 14.5V26.5C12.5 27.603 13.397 28.5 14.5 28.5H17.5V32.267L23.777 28.5H30.5C31.603 28.5 32.5 27.603 32.5 26.5V14.5C32.5 13.397 31.603 12.5 30.5 12.5ZM30.5 26.5H23.223L19.5 28.733V26.5H14.5V14.5H30.5V26.5Z" fill="#1D2939"/>
+                                <path d="M24.3032 19.6894L22.9042 18.2914L19.0352 22.1554V23.5544H20.4342L24.3032 19.6894ZM24.6302 16.5664L26.0282 17.9654L24.9622 19.0314L23.5632 17.6334L24.6302 16.5664Z" fill="#1D2939"/>
+                                </svg>          
+                    </div>
+                </div>
+                <!-- Receiver & freq -->
+                <div class="space-y-3">
+                    <div>
+                        <p class="text-sm font-semibold text-gray-700">Receiver</p>
+                        <div class="flex justify-between">
+                            <h3 class="text-base font-normal text-[#065986] leading-8">Account Admin</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                </svg>
+                                
+                        </div>
+                        <svg width="500" class="w-full"  height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                            </svg>
+                            
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-gray-700">Frequency</p>
+                        <div class="flex justify-between">
+                            <h3 class="text-base font-normal text-[#065986] leading-8">Instant</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                </svg>
+                                
+                        </div>
+                        <svg width="500" class="w-full" height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                            </svg>
+                    </div>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+        <svg width="1040" class="my-10 w-full" height="2" viewBox="0 0 1040 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1L1040 1" stroke="#98A2B3"/>
+            </svg>
+            <div class="flex space-x-8 ">
+                <div class="w-1/2  ">
+                    <div class="flex justify-between">
+                       <div class="flex items-center space-x-1">
+                         <label class="relative inline-flex items-center  cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-7 h-4 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                         <p class="text-base font-semibold text-gray-800">Create An Account</p>
+                        
+        
+          
+                       </div>
+                        <div class="flex">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.873 16.25H19.0332C17.4961 16.25 16.25 17.4961 16.25 19.0332V29.873C16.25 31.4102 17.4961 32.6562 19.0332 32.6562H29.873C31.4102 32.6562 32.6562 31.4102 32.6562 29.873V19.0332C32.6562 17.4961 31.4102 16.25 29.873 16.25Z" stroke="#1D2939" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M28.7256 16.25L28.75 15.0781C28.7479 14.3536 28.4592 13.6593 27.9468 13.1469C27.4345 12.6346 26.7402 12.3458 26.0156 12.3438H15.4688C14.6407 12.3462 13.8473 12.6762 13.2617 13.2617C12.6762 13.8473 12.3462 14.6407 12.3438 15.4688V26.0156C12.3458 26.7402 12.6346 27.4345 13.1469 27.9468C13.6593 28.4592 14.3536 28.7479 15.0781 28.75H16.25M24.4531 20.5469V28.3594M28.3594 24.4531H20.5469" stroke="#1D2939" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.5 12.5H14.5C13.397 12.5 12.5 13.397 12.5 14.5V26.5C12.5 27.603 13.397 28.5 14.5 28.5H17.5V32.267L23.777 28.5H30.5C31.603 28.5 32.5 27.603 32.5 26.5V14.5C32.5 13.397 31.603 12.5 30.5 12.5ZM30.5 26.5H23.223L19.5 28.733V26.5H14.5V14.5H30.5V26.5Z" fill="#1D2939"/>
+                                    <path d="M24.3032 19.6894L22.9042 18.2914L19.0352 22.1554V23.5544H20.4342L24.3032 19.6894ZM24.6302 16.5664L26.0282 17.9654L24.9622 19.0314L23.5632 17.6334L24.6302 16.5664Z" fill="#1D2939"/>
+                                    </svg>          
+                        </div>
+                    </div>
+                    <!-- Receiver & freq -->
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700">Receiver</p>
+                            <div class="flex justify-between">
+                                <h3 class="text-base font-normal text-[#065986] leading-8">Account Admin</h3>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                    </svg>
+                                    
+                            </div>
+                            <svg width="500" class="w-full"  height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                                </svg>
+                                
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700">Frequency</p>
+                            <div class="flex justify-between">
+                                <h3 class="text-base font-normal text-[#065986] leading-8">Instant</h3>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                    </svg>
+                                    
+                            </div>
+                            <svg width="500" class="w-full" height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                                </svg>
+                        </div>
+                        
+                    </div>
+        
+                </div>
+                <div class="w-1/2  ">
+                    <div class="flex justify-between">
+                       <div class="flex items-center space-x-1">
+                         <label class="relative inline-flex items-center  cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-7 h-4 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                         <p class="text-base font-semibold text-gray-800">Activate An Account</p>
+                        
+        
+          
+                       </div>
+                        <div class="flex">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.873 16.25H19.0332C17.4961 16.25 16.25 17.4961 16.25 19.0332V29.873C16.25 31.4102 17.4961 32.6562 19.0332 32.6562H29.873C31.4102 32.6562 32.6562 31.4102 32.6562 29.873V19.0332C32.6562 17.4961 31.4102 16.25 29.873 16.25Z" stroke="#1D2939" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M28.7256 16.25L28.75 15.0781C28.7479 14.3536 28.4592 13.6593 27.9468 13.1469C27.4345 12.6346 26.7402 12.3458 26.0156 12.3438H15.4688C14.6407 12.3462 13.8473 12.6762 13.2617 13.2617C12.6762 13.8473 12.3462 14.6407 12.3438 15.4688V26.0156C12.3458 26.7402 12.6346 27.4345 13.1469 27.9468C13.6593 28.4592 14.3536 28.7479 15.0781 28.75H16.25M24.4531 20.5469V28.3594M28.3594 24.4531H20.5469" stroke="#1D2939" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.5 12.5H14.5C13.397 12.5 12.5 13.397 12.5 14.5V26.5C12.5 27.603 13.397 28.5 14.5 28.5H17.5V32.267L23.777 28.5H30.5C31.603 28.5 32.5 27.603 32.5 26.5V14.5C32.5 13.397 31.603 12.5 30.5 12.5ZM30.5 26.5H23.223L19.5 28.733V26.5H14.5V14.5H30.5V26.5Z" fill="#1D2939"/>
+                                    <path d="M24.3032 19.6894L22.9042 18.2914L19.0352 22.1554V23.5544H20.4342L24.3032 19.6894ZM24.6302 16.5664L26.0282 17.9654L24.9622 19.0314L23.5632 17.6334L24.6302 16.5664Z" fill="#1D2939"/>
+                                    </svg>          
+                        </div>
+                    </div>
+                    <!-- Receiver & freq -->
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700">Receiver</p>
+                            <div class="flex justify-between">
+                                <h3 class="text-base font-normal text-[#065986] leading-8">Account Admin</h3>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                    </svg>
+                                    
+                            </div>
+                            <svg width="500" class="w-full"  height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                                </svg>
+                                
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700">Frequency</p>
+                            <div class="flex justify-between">
+                                <h3 class="text-base font-normal text-[#065986] leading-8">Instant</h3>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7578 17.3433L7.75781 11.3433L9.75875 9.34375L13.7578 13.3442L17.7569 9.34375L19.7578 11.3433L13.7578 17.3433Z" fill="#4F4F4F"/>
+                                    </svg>
+                                    
+                            </div>
+                            <svg width="500" class="w-full" height="1" viewBox="0 0 500 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line opacity="0.5" y1="0.5" x2="500" y2="0.5" stroke="#D0D5DD"/>
+                                </svg>
+                        </div>
+                        
+                    </div>
+        
+                </div>
+        
+            </div>
+            <svg width="1040" class="my-10 w-full" height="2" viewBox="0 0 1040 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1L1040 1" stroke="#98A2B3"/>
+                </svg>
+        
+    </div>
+ </div>
+
+    </div>
+</div>

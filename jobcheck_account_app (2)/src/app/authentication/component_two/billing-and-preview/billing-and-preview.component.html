@@ -1,0 +1,272 @@
+<!--Navbar-->
+
+<div class="navbar">
+  <div class="left">
+    <img src="../../../../assets/Vector (2).png" class="py-1 ml-2" alt="image" width="100px">
+  </div>
+  <div class="right  flex justify-center items-center space-x-2 mr-6">
+    <svg class="notification" width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M7 19H11C11 20.1 10.1 21 9 21C7.9 21 7 20.1 7 19ZM18 17V18H0V17L2 15V9C2 5.9 4 3.2 7 2.3V2C7 0.9 7.9 0 9 0C10.1 0 11 0.9 11 2V2.3C14 3.2 16 5.9 16 9V15L18 17ZM14 9C14 6.2 11.8 4 9 4C6.2 4 4 6.2 4 9V16H14V9Z"
+        fill="white" />
+    </svg>
+    <img class="avatar" src="assets/Avatar.png" alt="">
+  </div>
+</div>
+
+
+
+
+<!--Status-->
+
+<div class="main">
+  <div class="status">
+    <ul class="list">
+      <li>
+        <div class="number">1</div>
+      </li>
+      <li class="text">About User</li>
+      <li>
+        <hr>
+      </li>
+      <li>
+        <div class="number">2</div>
+      </li>
+      <li class="text">Choose Package</li>
+      <li>
+        <hr>
+      </li>
+      <li>
+        <div class="greynumber">3</div>
+      </li>
+      <li class="greytext">Configure Permission</li>
+    </ul>
+
+    <!--Content-->
+    <div class="content">
+      <span class="heading">Preview & Billing</span>
+      <span><button class="checkoutbutton">Checkout&nbsp;<i class='fas fa-arrow-right'></i></button></span><br>
+
+      <!--Navbar 2-->
+      <div class="status1">
+        <ul class="list1">
+          <li><a href="#" class="monthly">Monthly</a></li>
+          <li><a href="#" class="quarterly">Quarterly</a></li>
+          <li><a href="#" class="yearly">Yearly<img class="offer" style="display: inline;"
+                src="../../../../assets/offer.png"></a></li>
+        </ul>
+      </div>
+
+      <!--one row two columns-->
+      <div class="row">
+        <!--First Column-->
+        <div class="column">
+          <div class="col1heading">Plan Preview</div><br>
+          <a href="#" class="col1nav" (click)="showContent = false">JOBS PACK</a>
+          <a href="#" class="col1nav2" (click)="showContent = true">RESUME DATA PACK</a>
+
+
+          <div *ngIf="!showContent">
+            <div class="bulbimage">
+              <img src="../../../../assets/bulb.png" class="innerimage" width="25px">
+              <span class="grow">GROW</span>
+            </div>
+
+            <!--2columns-->
+            <div class="row2" style="background-color: #F9FAFB;">
+              <div class="column2">
+                <p>Number of Job Post</p>
+              </div>
+              <div class="column2">
+                <p>1 NOS</p>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="column2">
+                <p>Bulk CV Download</p>
+              </div>
+              <div class="column2">
+                <p>NO</p>
+              </div>
+            </div>
+            <div class="row2" style="background-color: #F9FAFB;">
+              <div class="column2">
+                <p>Responsive Visibility</p>
+              </div>
+              <div class="column2">
+                <p>1 Month</p>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="column2">
+                <p>SMS Limit</p>
+              </div>
+              <div class="column2">
+                <p>300 NOS</p>
+              </div>
+            </div>
+            <div class="row2" style="background-color: #F9FAFB;">
+              <div class="column2">
+                <p>Email Limit</p>
+              </div>
+              <div class="column2">
+                <p>200 NOS</p>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="column2">
+                <p>Push Notification</p>
+              </div>
+              <div class="column2">
+                <p>400 NOS</p>
+              </div>
+            </div>
+            <!--Vertical line between columns-->
+            <div class="vertical"></div>
+          </div>
+
+
+
+          <div *ngIf="showContent">
+            <div class="bulbimage">
+              <img src="../../../../assets/Vector.png" class="innerimage" width="25px"
+                style="background-color: #F23588;">
+              <span class="grow">PRO</span>
+            </div>
+
+            <!--2columns-->
+            <div class="row2" style="background-color: #F9FAFB;">
+              <div class="column2">
+                <p>Data Storage</p>
+              </div>
+              <div class="column2">
+                <p>15 GB</p>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="column2">
+                <p>Bulk CV Download</p>
+              </div>
+              <div class="column2">
+                <p>NO</p>
+              </div>
+            </div>
+            <div class="row2" style="background-color: #F9FAFB;">
+              <div class="column2">
+                <p>Responsive Visibility</p>
+              </div>
+              <div class="column2">
+                <p>1 Month</p>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="column2">
+                <p>SMS Limit</p>
+              </div>
+              <div class="column2">
+                <p>300 NOS</p>
+              </div>
+            </div>
+            <div class="row2" style="background-color: #F9FAFB;">
+              <div class="column2">
+                <p>Email Limit</p>
+              </div>
+              <div class="column2">
+                <p>200 NOS</p>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="column2">
+                <p>Push Notification</p>
+              </div>
+              <div class="column2">
+                <p>400 NOS</p>
+              </div>
+            </div>
+            <!--Vertical line between columns-->
+            <div class="vertical"></div>
+          </div>
+        </div>
+
+        <!--Second Column-->
+
+        <div class="column1">
+          <p class="col1heading">Billing Summary</p><br><br>
+          <!--2columns-->
+          <div class="row3">
+            <div class="column2">
+              <div>
+                <img src="../../../../assets/bulb.png" class="innerimage2" style="background-color: #E8B930;">
+                <span class="grow2">GROW<div class="jobspack">Jobs Pack</div></span>
+              </div>
+            </div>
+            <div class="column2">
+              <p class="cost1">₹299</p>
+            </div>
+          </div>
+          <div class="border"></div>
+
+          <div class="row2">
+            <div class="column2">
+              <div>
+                <img src="../../../../assets/Vector.png" class="innerimage3" style="background-color: #F23588;">
+                <span class="grow2">PRO<div class="resumedata">Resume Data Pack</div></span>
+              </div>
+            </div>
+            <div class="column2">
+              <p class="cost1">₹149</p>
+            </div>
+          </div>
+          <div class="border"></div>
+
+          <div class="row2">
+            <div class="column2">
+              <div>
+                <img src="../../../../assets/Vector (1).png" class="innerimage4" style="background-color: #03121F;">
+                <span class="grow2">ELITE<div class="integration">Integration Pack</div></span>
+              </div>
+            </div>
+            <div class="column2">
+              <p class="cost1">₹249</p>
+            </div>
+          </div>
+          <div class="border"></div>
+
+          <div class="row2">
+            <div class="column2">
+              <div class="subtotal">
+                Subtotal
+              </div>
+            </div>
+            <div class="column2">
+              <p class="cost2">₹693</p>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="column2">
+              <div class="discount">
+                Discount
+              </div>
+            </div>
+            <div class="column2">
+              <p class="cost3">₹50</p>
+            </div>
+          </div>
+          <div class="border"></div>
+
+          <div class="row2">
+            <div class="column2">
+              <div class="total">
+                Total
+              </div>
+            </div>
+            <div class="column2">
+              <p>₹643</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

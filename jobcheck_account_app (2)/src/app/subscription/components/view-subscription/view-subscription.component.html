@@ -1,0 +1,639 @@
+<div>
+    <app-header></app-header>
+</div>
+<div class="fixed">
+    <app-sidebar></app-sidebar>
+</div>
+
+
+<div class=" mx-32 ">
+    <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start justify-center ">
+            <div class="text-black items-center mt-20 flex text-sm font-medium" style="font-family:'Inter';">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8334 7.0013H1.16675M1.16675 7.0013L7.00008 12.8346M1.16675 7.0013L7.00008 1.16797"
+                        stroke="#1D2939" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="ml-2">Back to subscription management</p>
+            </div>
+            <div class="text-black  order-1 text-3xl mt-2 font-semibold" style="font-family:'Inter';">
+                <span>View All Subscription</span>
+            </div>
+        </div>
+        <div class="text-[#667085] text-base  order-1  font-normal" style="font-family:'Inter';">
+            Manage your subscription data
+        </div>
+    </div>
+    <!--  -->
+    <div class="flex flex-col items-start bg-white rounded-lg min-w-max mt-6"
+        style="border: 1px solid #EAECF0;box-shadow: 15px 15px 30px rgba(16, 24, 40, 0.06);">
+        <div class="p-3 min-w-full flex flex-row items-center justify-between font-medium "style="font-family:'Inter';">
+            <div>
+                Job Post Subscriptions
+            </div>
+            <div class="ml-auto">
+                <button class="bg-[#0175A2] gap-1 text-white flex justify-center items-center p-2 rounded-lg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.99996 4.16797V15.8346M4.16663 10.0013H15.8333" stroke="#F9FAFB" stroke-width="1.67"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Add Subscription
+                </button>
+            </div>
+        </div>
+        <!--  -->
+        <div class=" overflow-x-auto">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-400  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Price
+                        </th>
+                        <th scope="col" class="px-10 py-3">
+                            Status
+                        </th>
+                        <th scope="col" class="px-7 py-3">
+                            Number Of Job Post
+                        </th>
+                        <th scope="col" class="px-7 py-3">
+                            Post Visibility
+                        </th>
+                        <th scope="col" class="px-7 py-3">
+                            Response Visibility
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Bulk Cv Download
+                        </th>
+                        <th scope="col" class="px-10 py-3">
+                            Actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row"
+                            class="px-6 gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAECF0" />
+                                <path
+                                    d="M20.8333 11.668H14.9999C14.5579 11.668 14.134 11.8436 13.8214 12.1561C13.5088 12.4687 13.3333 12.8926 13.3333 13.3346V26.668C13.3333 27.11 13.5088 27.5339 13.8214 27.8465C14.134 28.159 14.5579 28.3346 14.9999 28.3346H24.9999C25.4419 28.3346 25.8659 28.159 26.1784 27.8465C26.491 27.5339 26.6666 27.11 26.6666 26.668V17.5013M20.8333 11.668L26.6666 17.5013M20.8333 11.668V17.5013H26.6666"
+                                    stroke="#344054" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            BASIC
+                        </th>
+                        <td class="px-6 py-4">
+                            $55
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="bg-green-100 rounded-3xl ">
+                                Active
+                            </div>
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            1
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            30 Days
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            6 Months
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            No
+                        </td>
+                        <td class="px-6 py-3 gap-3 flex">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2665_19449)">
+                                    <path
+                                        d="M22.5 17.5013L17.5 22.5013M17.5 17.5013L22.5 22.5013M28.3333 20.0013C28.3333 24.6037 24.6023 28.3346 20 28.3346C15.3976 28.3346 11.6666 24.6037 11.6666 20.0013C11.6666 15.3989 15.3976 11.668 20 11.668C24.6023 11.668 28.3333 15.3989 28.3333 20.0013Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_19449">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_663_49930)">
+                                    <path
+                                        d="M24.1666 12.4989C24.3855 12.2801 24.6453 12.1065 24.9313 11.988C25.2173 11.8696 25.5238 11.8086 25.8333 11.8086C26.1428 11.8086 26.4493 11.8696 26.7353 11.988C27.0213 12.1065 27.2811 12.2801 27.5 12.4989C27.7188 12.7178 27.8924 12.9777 28.0109 13.2636C28.1294 13.5496 28.1903 13.8561 28.1903 14.1656C28.1903 14.4751 28.1294 14.7816 28.0109 15.0676C27.8924 15.3536 27.7188 15.6134 27.5 15.8323L16.25 27.0823L11.6666 28.3323L12.9166 23.7489L24.1666 12.4989Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_663_49930">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row"
+                            class="px-6 flex gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAECF0" />
+                                <path
+                                    d="M14.1667 27.5H25.8333C26.7538 27.5 27.5 26.7538 27.5 25.8333V14.1667C27.5 13.2462 26.7538 12.5 25.8333 12.5H14.1667C13.2462 12.5 12.5 13.2462 12.5 14.1667V25.8333C12.5 26.7538 13.2462 27.5 14.1667 27.5ZM14.1667 27.5L23.3333 18.3333L27.5 22.5M18.3333 17.0833C18.3333 17.7737 17.7737 18.3333 17.0833 18.3333C16.393 18.3333 15.8333 17.7737 15.8333 17.0833C15.8333 16.393 16.393 15.8333 17.0833 15.8333C17.7737 15.8333 18.3333 16.393 18.3333 17.0833Z"
+                                    stroke="#344054" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            STANDARD
+                        </th>
+                        <td class="px-6 py-4">
+                            $80
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="bg-green-100 rounded-3xl">
+                                Active
+                            </div>
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            1
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            30 Days
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            6 Months
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            No
+                        </td>
+                        <td class="px-6 py-3 gap-3 flex">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2665_19449)">
+                                    <path
+                                        d="M22.5 17.5013L17.5 22.5013M17.5 17.5013L22.5 22.5013M28.3333 20.0013C28.3333 24.6037 24.6023 28.3346 20 28.3346C15.3976 28.3346 11.6666 24.6037 11.6666 20.0013C11.6666 15.3989 15.3976 11.668 20 11.668C24.6023 11.668 28.3333 15.3989 28.3333 20.0013Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_19449">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_663_49930)">
+                                    <path
+                                        d="M24.1666 12.4989C24.3855 12.2801 24.6453 12.1065 24.9313 11.988C25.2173 11.8696 25.5238 11.8086 25.8333 11.8086C26.1428 11.8086 26.4493 11.8696 26.7353 11.988C27.0213 12.1065 27.2811 12.2801 27.5 12.4989C27.7188 12.7178 27.8924 12.9777 28.0109 13.2636C28.1294 13.5496 28.1903 13.8561 28.1903 14.1656C28.1903 14.4751 28.1294 14.7816 28.0109 15.0676C27.8924 15.3536 27.7188 15.6134 27.5 15.8323L16.25 27.0823L11.6666 28.3323L12.9166 23.7489L24.1666 12.4989Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_663_49930">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </td>
+
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row"
+                            class="px-6 flex gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAECF0" />
+                                <g clip-path="url(#clip0_2665_12273)">
+                                    <path
+                                        d="M15.8334 11.668V28.3346M24.1667 11.668V28.3346M11.6667 20.0013H28.3334M11.6667 15.8346H15.8334M11.6667 24.168H15.8334M24.1667 24.168H28.3334M24.1667 15.8346H28.3334M13.4834 11.668H26.5167C27.5201 11.668 28.3334 12.4813 28.3334 13.4846V26.518C28.3334 27.5213 27.5201 28.3346 26.5167 28.3346H13.4834C12.4801 28.3346 11.6667 27.5213 11.6667 26.518V13.4846C11.6667 12.4813 12.4801 11.668 13.4834 11.668Z"
+                                        stroke="#344054" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_12273">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            PREMIUM
+                        </th>
+                        <td class="px-6 py-4">
+                            $120
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="bg-red-100 rounded-3xl px-1">
+                                in-Active
+                            </div>
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            1
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            30 Days
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            6 Months
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            No
+                        </td>
+                        <td class="px-6 py-3 gap-3 flex">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2665_19449)">
+                                    <path
+                                        d="M22.5 17.5013L17.5 22.5013M17.5 17.5013L22.5 22.5013M28.3333 20.0013C28.3333 24.6037 24.6023 28.3346 20 28.3346C15.3976 28.3346 11.6666 24.6037 11.6666 20.0013C11.6666 15.3989 15.3976 11.668 20 11.668C24.6023 11.668 28.3333 15.3989 28.3333 20.0013Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_19449">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_663_49930)">
+                                    <path
+                                        d="M24.1666 12.4989C24.3855 12.2801 24.6453 12.1065 24.9313 11.988C25.2173 11.8696 25.5238 11.8086 25.8333 11.8086C26.1428 11.8086 26.4493 11.8696 26.7353 11.988C27.0213 12.1065 27.2811 12.2801 27.5 12.4989C27.7188 12.7178 27.8924 12.9777 28.0109 13.2636C28.1294 13.5496 28.1903 13.8561 28.1903 14.1656C28.1903 14.4751 28.1294 14.7816 28.0109 15.0676C27.8924 15.3536 27.7188 15.6134 27.5 15.8323L16.25 27.0823L11.6666 28.3323L12.9166 23.7489L24.1666 12.4989Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_663_49930">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--  -->
+        <div class="p-3 min-w-full flex flex-row items-center justify-between ">
+            <div>
+                <button type="button"
+                    class="bg-white flex items-center gap-1 border border-solid border-[#D0D5DD] py-1 px-3 rounded-lg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.8334 10.0013H4.16675M4.16675 10.0013L10.0001 15.8346M4.16675 10.0013L10.0001 4.16797"
+                            stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Previous</button>
+            </div>
+            <!--  -->
+            <nav aria-label="Page navigation example">
+                <ul class="inline-flex items-center -space-x-px">
+                    <li>
+                        <a href="#" aria-current="page"
+                            class=" z-10 px-3 py-2 leading-tight text-blue-600  bg-blue-50   hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                    </li>
+                    <li>
+                        <a href="#" 
+                            class="px-3 py-2 leading-tight   text-gray-500  bg-white  hover:bg-blue-100  dark:border-gray-700 dark:text-white">3</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="px-3 py-2 leading-tight text-gray-500 bg-white   hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="px-3 py-2 leading-tight text-gray-500 bg-white hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400  dark:hover:text-white">4</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="px-3 py-2 leading-tight text-gray-500 bg-white  hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400  dark:hover:text-white">5</a>
+                    </li>
+                </ul>
+            </nav>
+           <!--  -->
+            <div>
+                <button type="button"
+                    class="bg-white flex items-center gap-1 border border-solid border-[#D0D5DD] py-1 px-3 rounded-lg">
+                    Next
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.16663 10.0013H15.8333M15.8333 10.0013L9.99996 4.16797M15.8333 10.0013L9.99996 15.8346"
+                            stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <!--  -->
+    <div class="flex flex-col items-start bg-white rounded-lg min-w-max mt-6"
+        style="border: 1px solid #EAECF0;box-shadow: 15px 15px 30px rgba(16, 24, 40, 0.06);">
+        <div class="p-3 min-w-full flex flex-row items-center justify-between font-medium"style="font-family:'Inter';">
+            <div>
+                Data Base Subscriptions
+            </div>
+            <div class="ml-auto">
+                <button class="bg-[#0175A2] gap-1 text-white flex justify-center items-center p-2 rounded-lg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.99996 4.16797V15.8346M4.16663 10.0013H15.8333" stroke="#F9FAFB" stroke-width="1.67"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Add Subscription
+                </button>
+            </div>
+        </div>
+        <!--  -->
+        <div class=" overflow-x-auto">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-400  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Price
+                        </th>
+                        <th scope="col" class="px-10 py-3">
+                            Status
+                        </th>
+                        <th scope="col" class="px-9 py-3">
+                            Data Base Access
+                        </th>
+                        <th scope="col" class="px-10 py-3">
+                            CV Download
+                        </th>
+                        <th scope="col" class="px-9 py-3">
+                            Email Access
+                        </th>
+                        <th scope="col" class="px-10 py-3">
+                            Created On
+                        </th>
+                        <th scope="col" class="px-10 py-3">
+                            Actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row"
+                            class="px-6 gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAECF0" />
+                                <path
+                                    d="M20.8333 11.668H14.9999C14.5579 11.668 14.134 11.8436 13.8214 12.1561C13.5088 12.4687 13.3333 12.8926 13.3333 13.3346V26.668C13.3333 27.11 13.5088 27.5339 13.8214 27.8465C14.134 28.159 14.5579 28.3346 14.9999 28.3346H24.9999C25.4419 28.3346 25.8659 28.159 26.1784 27.8465C26.491 27.5339 26.6666 27.11 26.6666 26.668V17.5013M20.8333 11.668L26.6666 17.5013M20.8333 11.668V17.5013H26.6666"
+                                    stroke="#344054" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            BASIC
+                        </th>
+                        <td class="px-6 py-4">
+                            $55
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="bg-green-100 rounded-3xl ">
+                                Active
+                            </div>
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            1
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            30 Days
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            6 Months
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            No
+                        </td>
+                        <td class="px-6 py-3 gap-4 flex">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2665_19449)">
+                                    <path
+                                        d="M22.5 17.5013L17.5 22.5013M17.5 17.5013L22.5 22.5013M28.3333 20.0013C28.3333 24.6037 24.6023 28.3346 20 28.3346C15.3976 28.3346 11.6666 24.6037 11.6666 20.0013C11.6666 15.3989 15.3976 11.668 20 11.668C24.6023 11.668 28.3333 15.3989 28.3333 20.0013Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_19449">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_663_49930)">
+                                    <path
+                                        d="M24.1666 12.4989C24.3855 12.2801 24.6453 12.1065 24.9313 11.988C25.2173 11.8696 25.5238 11.8086 25.8333 11.8086C26.1428 11.8086 26.4493 11.8696 26.7353 11.988C27.0213 12.1065 27.2811 12.2801 27.5 12.4989C27.7188 12.7178 27.8924 12.9777 28.0109 13.2636C28.1294 13.5496 28.1903 13.8561 28.1903 14.1656C28.1903 14.4751 28.1294 14.7816 28.0109 15.0676C27.8924 15.3536 27.7188 15.6134 27.5 15.8323L16.25 27.0823L11.6666 28.3323L12.9166 23.7489L24.1666 12.4989Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_663_49930">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row"
+                            class="px-6 flex gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white items-center">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAECF0" />
+                                <path
+                                    d="M14.1667 27.5H25.8333C26.7538 27.5 27.5 26.7538 27.5 25.8333V14.1667C27.5 13.2462 26.7538 12.5 25.8333 12.5H14.1667C13.2462 12.5 12.5 13.2462 12.5 14.1667V25.8333C12.5 26.7538 13.2462 27.5 14.1667 27.5ZM14.1667 27.5L23.3333 18.3333L27.5 22.5M18.3333 17.0833C18.3333 17.7737 17.7737 18.3333 17.0833 18.3333C16.393 18.3333 15.8333 17.7737 15.8333 17.0833C15.8333 16.393 16.393 15.8333 17.0833 15.8333C17.7737 15.8333 18.3333 16.393 18.3333 17.0833Z"
+                                    stroke="#344054" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            STANDARD
+                        </th>
+                        <td class="px-6 py-4">
+                            $80
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="bg-green-100 rounded-3xl">
+                                Active
+                            </div>
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            1
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            30 Days
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            6 Months
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            No
+                        </td>
+                        <td class="px-6 py-3 gap-4 flex">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2665_19449)">
+                                    <path
+                                        d="M22.5 17.5013L17.5 22.5013M17.5 17.5013L22.5 22.5013M28.3333 20.0013C28.3333 24.6037 24.6023 28.3346 20 28.3346C15.3976 28.3346 11.6666 24.6037 11.6666 20.0013C11.6666 15.3989 15.3976 11.668 20 11.668C24.6023 11.668 28.3333 15.3989 28.3333 20.0013Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_19449">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_663_49930)">
+                                    <path
+                                        d="M24.1666 12.4989C24.3855 12.2801 24.6453 12.1065 24.9313 11.988C25.2173 11.8696 25.5238 11.8086 25.8333 11.8086C26.1428 11.8086 26.4493 11.8696 26.7353 11.988C27.0213 12.1065 27.2811 12.2801 27.5 12.4989C27.7188 12.7178 27.8924 12.9777 28.0109 13.2636C28.1294 13.5496 28.1903 13.8561 28.1903 14.1656C28.1903 14.4751 28.1294 14.7816 28.0109 15.0676C27.8924 15.3536 27.7188 15.6134 27.5 15.8323L16.25 27.0823L11.6666 28.3323L12.9166 23.7489L24.1666 12.4989Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_663_49930">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </td>
+
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row"
+                            class="px-6 flex gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white items-center">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#EAECF0" />
+                                <g clip-path="url(#clip0_2665_12273)">
+                                    <path
+                                        d="M15.8334 11.668V28.3346M24.1667 11.668V28.3346M11.6667 20.0013H28.3334M11.6667 15.8346H15.8334M11.6667 24.168H15.8334M24.1667 24.168H28.3334M24.1667 15.8346H28.3334M13.4834 11.668H26.5167C27.5201 11.668 28.3334 12.4813 28.3334 13.4846V26.518C28.3334 27.5213 27.5201 28.3346 26.5167 28.3346H13.4834C12.4801 28.3346 11.6667 27.5213 11.6667 26.518V13.4846C11.6667 12.4813 12.4801 11.668 13.4834 11.668Z"
+                                        stroke="#344054" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_12273">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            PREMIUM
+                        </th>
+                        <td class="px-6 py-4">
+                            $120
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="bg-red-100 rounded-3xl px-1">
+                                in-Active
+                            </div>
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            1
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            30 Days
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            6 Months
+                        </td>
+                        <td class="px-7 py-4 text-center">
+                            No
+                        </td>
+                        <td class="px-6 py-3 gap-4 flex">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2665_19449)">
+                                    <path
+                                        d="M22.5 17.5013L17.5 22.5013M17.5 17.5013L22.5 22.5013M28.3333 20.0013C28.3333 24.6037 24.6023 28.3346 20 28.3346C15.3976 28.3346 11.6666 24.6037 11.6666 20.0013C11.6666 15.3989 15.3976 11.668 20 11.668C24.6023 11.668 28.3333 15.3989 28.3333 20.0013Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2665_19449">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_663_49930)">
+                                    <path
+                                        d="M24.1666 12.4989C24.3855 12.2801 24.6453 12.1065 24.9313 11.988C25.2173 11.8696 25.5238 11.8086 25.8333 11.8086C26.1428 11.8086 26.4493 11.8696 26.7353 11.988C27.0213 12.1065 27.2811 12.2801 27.5 12.4989C27.7188 12.7178 27.8924 12.9777 28.0109 13.2636C28.1294 13.5496 28.1903 13.8561 28.1903 14.1656C28.1903 14.4751 28.1294 14.7816 28.0109 15.0676C27.8924 15.3536 27.7188 15.6134 27.5 15.8323L16.25 27.0823L11.6666 28.3323L12.9166 23.7489L24.1666 12.4989Z"
+                                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_663_49930">
+                                        <rect width="20" height="20" fill="white" transform="translate(10 10)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--  -->
+        <div class="p-3 min-w-full flex flex-row items-center justify-between ">
+            <div>
+                <button type="button"
+                    class="bg-white flex items-center gap-1 border border-solid border-[#D0D5DD] py-1 px-3 rounded-lg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.8334 10.0013H4.16675M4.16675 10.0013L10.0001 15.8346M4.16675 10.0013L10.0001 4.16797"
+                            stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Previous</button>
+            </div>
+            <!--  -->
+            <nav aria-label="Page navigation example">
+                <ul class="inline-flex items-center -space-x-px">
+                    <li>
+                        <a href="#" aria-current="page"
+                            class=" z-10 px-3 py-2 leading-tight text-blue-600  bg-blue-50   hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                    </li>
+                    <li>
+                        <a href="#" 
+                            class="px-3 py-2 leading-tight   text-gray-500  bg-white  hover:bg-blue-100  dark:border-gray-700 dark:text-white">3</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="px-3 py-2 leading-tight text-gray-500 bg-white   hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="px-3 py-2 leading-tight text-gray-500 bg-white hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400  dark:hover:text-white">4</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="px-3 py-2 leading-tight text-gray-500 bg-white  hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800  dark:text-gray-400  dark:hover:text-white">5</a>
+                    </li>
+                </ul>
+            </nav>
+           <!--  -->
+            <div>
+                <button type="button"
+                    class="bg-white flex items-center gap-1 border border-solid border-[#D0D5DD] py-1 px-3 rounded-lg">
+                    Next
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.16663 10.0013H15.8333M15.8333 10.0013L9.99996 4.16797M15.8333 10.0013L9.99996 15.8346"
+                            stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>

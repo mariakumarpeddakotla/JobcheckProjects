@@ -1,0 +1,4 @@
+li:hover svg path, li:hover p{
+    color: white;
+    fill: white;
+}

@@ -1,0 +1,239 @@
+<div >
+    <app-header></app-header>
+</div>
+<div class="fixed">
+    <app-sidebar></app-sidebar>
+</div>
+<div class="bg-[#ECEBEB]">
+    <div class="mx-20 py-20">
+        <div class="flex justify-between">
+            <div>
+                <div class="text-[#101828] text-2xl font-medium">Edit Client</div>
+                <div class="text-[#667085] text-base font-normal">Modify client details</div>
+            </div>
+            <div class="flex">
+                <div>
+                    <button class="text-black bg-white rounded-lg px-4 py-2 text-[#344054] w-28">Cancel</button>
+                </div>
+                <div class="ml-4">
+                    <button class="bg-[#0175A2] text-white rounded-lg px-4 py-2 text-white w-28"(click)="showpop1()">Save</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-white rounded-xl"
+            style="box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);">
+            <div class="flex py-6 ml-6">
+                <div>
+                    <div>Client Logo</div>
+                    <div><img class="h-32 w-32" src="assets/images/logo.png" alt=""></div>
+                    <div class="bg-white rounded-lg flex gap-2 px-4 py-2 w-28 borde:border-gray-900">
+                        <button class="text-black text-[#344054] "> Upload </button> <svg class="mt-1" width="15"
+                            height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2036_89825)">
+                                <path
+                                    d="M7.5 13.125C10.6066 13.125 13.125 10.6066 13.125 7.5C13.125 4.3934 10.6066 1.875 7.5 1.875C4.3934 1.875 1.875 4.3934 1.875 7.5C1.875 10.6066 4.3934 13.125 7.5 13.125Z"
+                                    stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 10.3125V4.6875" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 4.6875L5.39062 6.79688" stroke="#4F4F4F" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 4.6875L9.60938 6.79688" stroke="#4F4F4F" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2036_89825">
+                                    <rect width="15" height="15" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="px-8">
+                    <div>
+                        <div class="font-medium text-lg text-[#101828]">Basic Information</div>
+                        <div>
+                            <div class="grid grid-cols-3 gap-4 justify-between">
+                                <div class="mr-4 mt-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Business
+                                        Name</label>
+                                    <input type="text"
+                                        class="w-full text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Legal/Trade
+                                        Name</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class=" mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Industry
+                                        Type</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="font-medium text-lg text-[#101828]">Postal Address</div>
+                        <div>
+                            <div class="flex gap-4 justify-between">
+                                <div class="mr-4 w-2/3 mt-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Address</label>
+                                    <input type="text"
+                                        class="w-full text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4 w-1/3">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Zip Code</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <div class="grid grid-cols-3 gap-4 justify-between">
+                                    <div class="mr-4 mt-4">
+                                        <label
+                                            class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Town/City</label>
+                                        <input type="text"
+                                            class="w-full text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                    </div>
+                                    <div class="pr-4">
+                                        <label
+                                            class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">State/Region</label>
+                                        <input type="text" id="small-input"
+                                            class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                    </div>
+                                    <div class="pr-4">
+                                        <label
+                                            class=" mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Country</label>
+                                        <input type="text" id="small-input"
+                                            class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="font-medium text-lg text-[#101828]">Primary Contact <span
+                                class="text-lg font-medium text-[#667085]">(Account Admin)</span></div>
+                        <div>
+                            <div class="grid grid-cols-3 gap-4 justify-between">
+                                <div class="mr-4 mt-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">First Name
+                                    </label>
+                                    <input type="text"
+                                        class="w-full text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Last Name</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class=" mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Mobile
+                                        Number</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="font-medium text-lg text-[#101828]">Credentials</div>
+                        <div>
+                            <div class="grid grid-cols-3 gap-4 justify-between">
+                                <div class="mr-4 mt-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Email</label>
+                                    <input type="text"
+                                        class="w-full text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Password</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class=" mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Confirm
+                                        Password</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="font-medium text-lg text-[#101828]">Subscription</div>
+                        <div>
+                            <div class="grid grid-cols-3 gap-4 justify-between">
+                                <div class="mr-4 mt-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Product</label>
+                                    <input type="text"
+                                        class="w-full text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class="mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Subscription
+                                        Package</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                                <div class="pr-4">
+                                    <label class=" mb-2 text-sm font-sm text-[#4F4F4F] dark:text-white">Account
+                                        Manager</label>
+                                    <input type="text" id="small-input"
+                                        class="w-full p-2 text-base font-medium text-[#101828] border-b-2 border-0 border-gray-400 outline-none focus:ring-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relative z-10 " aria-labelledby="modal-title" role="dialog" aria-modal="true" *ngIf="down">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+    <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all ">
+                <div class="relative p-4 w-full max-w-md h-60 md:h-auto">
+                    <div class="relative bg-white ">
+
+                        <div class="px-6  text-center">
+                            <div class=" mt-1.5">
+                                <svg class="mx-auto" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="48" height="48" rx="24" fill="#F6FEF9" />
+                                    <path
+                                        d="M27.9998 24.0002V28.0002M27.9998 32.0002H28.0098M26.2898 18.8602L17.8198 33.0002C17.6451 33.3026 17.5527 33.6455 17.5518 33.9947C17.5508 34.3439 17.6413 34.6873 17.8142 34.9907C17.9871 35.2941 18.2365 35.547 18.5375 35.7241C18.8385 35.9012 19.1806 35.9964 19.5298 36.0002H36.4698C36.819 35.9964 37.1611 35.9012 37.4621 35.7241C37.7631 35.547 38.0124 35.2941 38.1854 34.9907C38.3583 34.6873 38.4488 34.3439 38.4478 33.9947C38.4468 33.6455 38.3544 33.3026 38.1798 33.0002L29.7098 18.8602C29.5315 18.5663 29.2805 18.3233 28.981 18.1547C28.6814 17.9861 28.3435 17.8975 27.9998 17.8975C27.656 17.8975 27.3181 17.9861 27.0186 18.1547C26.7191 18.3233 26.468 18.5663 26.2898 18.8602Z"
+                                        stroke="#344054" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="4" y="4" width="48" height="48" rx="24" stroke="#ECFAFF"
+                                        stroke-width="8" />
+                                </svg>
+                            </div>
+                            <p class=" text-lg font-medium leading-6 text-gray-900 mt-3 ">Save Changes?</p>
+                            <p class=" text-center text-sm font-normal text-gray-500 mt-2">Do you want to update the changes of
+                                client?</p>
+                            <div class=" flex justify-center mt-4 ">
+                            </div>
+
+                            <button
+                                class=" text-gray-700 shadow-xs bg-white border border-gray-300 focus:outline-none font-medium rounded-lg text-md px-6 py-2.5 mt-8"
+                                type="button" data-modal-toggle="popup-modal" (click)="hide1()">Cancel
+                            </button>
+                            <button
+                                class=" text-white bg-purple-700 border border-gray-300 focus:outline-none  font-medium rounded-lg text-md px-6 py-2.5 ml-3 mt-8"
+                                type="button" data-modal-toggle="popup-modal">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

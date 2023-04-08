@@ -1,0 +1,488 @@
+
+    <app-header></app-header>
+
+
+    <app-sidebar></app-sidebar>
+
+<div class="bg-[#F3F4F6] ">
+    <div class="py-20 mx-20">
+        <div class="mx-4">
+            <div class="flex justify-between ">
+                <div class="">
+                    <p class="w-28 h-10 not-italic font-semibold text-3xl  flex-none
+                    order-0 flex-grow-0" style=" font-family: 'Inter'">
+                                Clients
+                            </p>
+                    <p class=" pt-3 text-sm font-normal">Manage your clients data </p>
+                </div>
+                <div class="flex">
+                    <div class="mx-2 mt-5 "routerLink="/client/client-home">
+                        <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="44" height="40" rx="8" fill="#0175A2" />
+                            <path d="M20 11.5H13V18.5H20V11.5Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M31 11.5H24V18.5H31V11.5Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M31 22.5H24V29.5H31V22.5Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M20 22.5H13V29.5H20V22.5Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="mx-2 mt-5">
+                        <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="1" width="43" height="39" rx="7.5" fill="#F9FAFB" />
+                            <path d="M18 14.5H31" stroke="#1D2939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M18 20.5H31" stroke="#1D2939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M18 26.5H31" stroke="#1D2939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M13 14.5H13.01" stroke="#1D2939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M13 20.5H13.01" stroke="#1D2939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M13 26.5H13.01" stroke="#1D2939" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <rect x="0.5" y="1" width="43" height="39" rx="7.5" stroke="#D0D5DD" />
+                        </svg>
+                    </div>
+
+                    <div class="mx-2 mr-2 mt-5">
+                        <button routerLink="/client/add-client"
+                            class="bg-[#0175A2]  px-2 py-2 rounded-lg text-white text-sm font-medium border border-1 flex">
+                            <svg class="mt-1 mr-2" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99999 1.16675V12.8334M1.16666 7.00008H12.8333" stroke="white"
+                                    stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>New Client
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#FFFFFF] mx-4 mt-5 rounded-lg drop-shadow-md border-[#EAECF0]">
+            <div class="flex justify-between ">
+                <div class="ml-10  flex ">
+                    <p class="mt-5 text-xl font-semibold   ">Client</p>
+                    <div class="ml-5">
+                        <button class="mt-[1.5rem] bg-[#ECFDF3] text-[0.625rem] px-1 py-1 rounded-lg text-[#027A48]  ">
+                            05 Users
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex mt-5 mr-10 ">
+                        <div class="flex">
+                            <div class=" w-full  flex  border border- text-gray-500 text-sm rounded-lg   p-2.5  ">
+                                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6b7280"
+                                    class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                </svg>
+                                <input class="outline-none  border-gray-300 ml-2" placeholder="Search">
+                            </div>
+                            <div class="flex">
+                                <div class="absolute ml-5 mt-3">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1530_13021)">
+                                            <path
+                                                d="M6.66649 14.1686L9.99982 17.5019M9.99982 17.5019L13.3332 14.1686M9.99982 17.5019V10.0019M17.3998 15.0769C18.1243 14.5674 18.6676 13.8404 18.9509 13.0012C19.2342 12.162 19.2427 11.2544 18.9752 10.4101C18.7076 9.56576 18.178 8.82864 17.4632 8.3057C16.7484 7.78276 15.8855 7.5012 14.9998 7.5019H13.9498C13.6992 6.52512 13.2302 5.61794 12.5783 4.84863C11.9263 4.07932 11.1083 3.46795 10.1858 3.06053C9.26338 2.6531 8.26053 2.46025 7.25276 2.49649C6.245 2.53274 5.25858 2.79712 4.36778 3.26975C3.47698 3.74238 2.70501 4.41094 2.10998 5.22509C1.51495 6.03924 1.11237 6.97777 0.93254 7.97002C0.752714 8.96228 0.800331 9.98239 1.07181 10.9536C1.34328 11.9248 1.83154 12.8217 2.49982 13.5769"
+                                                stroke="#344054" stroke-width="1.67" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1530_13021">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <button
+                                        class="ml-2 w-40 text-center  border border-2 text-gray-800 text-sm font-semibold rounded-lg pl-8  p-2.5  ">
+
+                                        Download CSV
+                                        <!-- <input class="outline-none  border-gray-300 ml-2" placeholder="Download CSV"> -->
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class=" border-b my-4" style="background: rgba(180, 191, 233, 0.2);">
+            <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+                <thead class="text-xs font-medium   text-[#667085]">
+                    <tr class="text-left ">
+                        <th scope="col" class="p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-all-search" type="checkbox"
+                                    class="w-4 h-4 text-blue-100 bg-gray-300 border-gray-300 rounded-2xl  ">
+                                <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                            </div>
+                        </th>
+                        <th scope="col" class="px-2 py-1">
+                            Name
+                        </th>
+                        <th scope="col" class="px-2 py-1">
+
+                            Industry Type
+                        </th>
+                        <th scope="col" class="px-2 py-1">
+                            Status
+                        </th>
+                        <th scope="col" class="px-2 py-1">
+                            Address
+                        </th>
+                        <th scope="col" class="px-2 py-1">
+                            Job Posted
+                        </th>
+                        <th scope="col" class="px-2 py-1 ">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="   bg-gray-100 ">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-all-search" type="checkbox"
+                                    class="w-4 h-4 text-blue-100 bg-gray-300 border-gray-300 rounded-2xl  ">
+                                <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class=" font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <div class="flex" type="button" data-te-offcanvas-toggle data-te-target="#offcanvasRight"
+                                aria-controls="offcanvasRight" data-te-ripple-init data-te-ripple-color="light">
+                                <img class="h-10" src="assets/images/company1.png" alt="">
+                                <p class="mt-3 ml-2"> Pratian Technologies </p>
+                            </div>
+
+                        </th>
+                        <td class="px-2 py-1">
+                            IT & Consulting
+                        </td>
+                        <td class="">
+                            <div class="">
+                               
+                                <button class="bg-[#ECFDF3] text-[#027A48]   font-semibold py-2 px-1 rounded-lg">
+                                    Active
+                                </button>
+                            </div>
+                        </td>
+                        <td class=" text-[#667085] text-sm ">
+                            Bangalore ,Karnataka
+                        </td>
+                        <td class="px-4 py-2">
+                            20k
+                        </td>
+
+                        <td class="flex items-center ">
+                            <div class="flex -ml-4">
+                                <div (click)="showpop()" href="#"
+                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg width="41"
+                                        height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.9998 17.5013L17.9998 22.5013M17.9998 17.5013L22.9998 22.5013M28.8332 20.0013C28.8332 24.6037 25.1022 28.3346 20.4998 28.3346C15.8975 28.3346 12.1665 24.6037 12.1665 20.0013C12.1665 15.3989 15.8975 11.668 20.4998 11.668C25.1022 11.668 28.8332 15.3989 28.8332 20.0013Z"
+                                            stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div routerLink="/client/Edit-client" class="font-medium text-red-600 dark:text-red-500 hover:underline"><svg
+                                        width="45" height="44" viewBox="0 0 45 44" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.5 13.0003C27.7626 12.7377 28.0744 12.5293 28.4176 12.3872C28.7608 12.245 29.1286 12.1719 29.5 12.1719C29.8714 12.1719 30.2392 12.245 30.5824 12.3872C30.9256 12.5293 31.2374 12.7377 31.5 13.0003C31.7626 13.2629 31.971 13.5747 32.1131 13.9179C32.2553 14.2611 32.3284 14.6289 32.3284 15.0003C32.3284 15.3717 32.2553 15.7395 32.1131 16.0827C31.971 16.4259 31.7626 16.7377 31.5 17.0003L18 30.5003L12.5 32.0003L14 26.5003L27.5 13.0003Z"
+                                            stroke="#667085" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-white ">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-all-search" type="checkbox"
+                                    class="w-4 h-4 text-blue-100 bg-gray-300 border-gray-300 rounded-2xl  ">
+                                <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class=" font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <div class="flex ">
+                                <img class="h-10 " src="assets/images/company2.png" alt="companylogo-3.svg">
+                                <p class="mt-3 ml-2"> BrandCo Ltd </p>
+                            </div>
+                        </th>
+                        <td class="px-2 py-1">
+                            IT & Consulting
+                        </td>
+                        <td class="">
+                            <div class="">
+                                
+                                <button class="bg-[#F2F4F7] text-[#667085]   font-semibold py-2 px-1 rounded-lg">
+                                    In Active
+                                </button>
+                            </div>
+                        </td>
+                        <td class=" text-[#667085] text-sm ">
+                            Pune , Maharashtra
+                        </td>
+                        <td class="px-4 py-2">
+                            5k
+                        </td>
+
+                        <td class="flex items-center ">
+                            <div class="flex -ml-4">
+                                <div (click)="showpop1()" href="#"
+                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg width="41"
+                                        height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.9998 17.5013L17.9998 22.5013M17.9998 17.5013L22.9998 22.5013M28.8332 20.0013C28.8332 24.6037 25.1022 28.3346 20.4998 28.3346C15.8975 28.3346 12.1665 24.6037 12.1665 20.0013C12.1665 15.3989 15.8975 11.668 20.4998 11.668C25.1022 11.668 28.8332 15.3989 28.8332 20.0013Z"
+                                            stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div routerLink="/client/Edit-client" class="font-medium text-red-600 dark:text-red-500 hover:underline " >
+                                    <svg
+                                        width="45" height="44" viewBox="0 0 45 44" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.5 13.0003C27.7626 12.7377 28.0744 12.5293 28.4176 12.3872C28.7608 12.245 29.1286 12.1719 29.5 12.1719C29.8714 12.1719 30.2392 12.245 30.5824 12.3872C30.9256 12.5293 31.2374 12.7377 31.5 13.0003C31.7626 13.2629 31.971 13.5747 32.1131 13.9179C32.2553 14.2611 32.3284 14.6289 32.3284 15.0003C32.3284 15.3717 32.2553 15.7395 32.1131 16.0827C31.971 16.4259 31.7626 16.7377 31.5 17.0003L18 30.5003L12.5 32.0003L14 26.5003L27.5 13.0003Z"
+                                            stroke="#667085" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="   bg-gray-100 ">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-all-search" type="checkbox"
+                                    class="w-4 h-4 text-blue-100 bg-gray-300 border-gray-300 rounded-2xl  ">
+                                <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class=" font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <div class="flex ">
+                                <img class="h-10 " src="assets/images/company3.png" alt="companylogo-4.svg">
+                                <p class="mt-3 ml-2"> BrandCo Ltd </p>
+                            </div>
+                        </th>
+                        <td class="px-2 py-1">
+                            IT & Consulting
+                        </td>
+                        <td class="">
+                            <div class="">
+                           
+                                <button class="bg-[#ECFDF3] text-[#027A48]   font-semibold py-2 px-1 rounded-lg">
+                                    Active
+                                </button>
+                            </div>
+                        </td>
+                        <td class=" text-[#667085] text-sm ">
+                            Bangalore ,Karnataka
+                        </td>
+                        <td class="px-4 py-2">
+                            30k
+                        </td>
+
+                        <td class="flex items-center ">
+                            <div class="flex -ml-4">
+                                <div (click)="showpop()" href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg
+                                        width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.9998 17.5013L17.9998 22.5013M17.9998 17.5013L22.9998 22.5013M28.8332 20.0013C28.8332 24.6037 25.1022 28.3346 20.4998 28.3346C15.8975 28.3346 12.1665 24.6037 12.1665 20.0013C12.1665 15.3989 15.8975 11.668 20.4998 11.668C25.1022 11.668 28.8332 15.3989 28.8332 20.0013Z"
+                                            stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div routerLink="/client/Edit-client" class="font-medium text-red-600 dark:text-red-500 hover:underline"><svg
+                                        width="45" height="44" viewBox="0 0 45 44" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.5 13.0003C27.7626 12.7377 28.0744 12.5293 28.4176 12.3872C28.7608 12.245 29.1286 12.1719 29.5 12.1719C29.8714 12.1719 30.2392 12.245 30.5824 12.3872C30.9256 12.5293 31.2374 12.7377 31.5 13.0003C31.7626 13.2629 31.971 13.5747 32.1131 13.9179C32.2553 14.2611 32.3284 14.6289 32.3284 15.0003C32.3284 15.3717 32.2553 15.7395 32.1131 16.0827C31.971 16.4259 31.7626 16.7377 31.5 17.0003L18 30.5003L12.5 32.0003L14 26.5003L27.5 13.0003Z"
+                                            stroke="#667085" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-white ">
+                        <td class="w-4 p-4">
+                            <div class="flex items-center">
+                                <input id="checkbox-all-search" type="checkbox"
+                                    class="w-4 h-4 text-blue-100 bg-gray-300 border-gray-300 rounded-2xl  ">
+                                <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                            </div>
+                        </td>
+                        <th scope="row" class=" font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <div class="flex ">
+                                <img class="h-10 " src="assets/images/company4.png" alt="companylogo-5.svg">
+                                <p class="mt-3 ml-2"> BrandCo Ltd </p>
+                            </div>
+                        </th>
+                        <td class="px-2 py-1">
+                            IT & Consulting
+                        </td>
+                        <td class="">
+                            <div class="">
+                               
+                                <button class="bg-[#ECFDF3] text-[#027A48]   font-semibold py-2 px-1 rounded-lg">
+                                    Active
+                                </button>
+                            </div>
+                        </td>
+                        <td class=" text-[#667085] text-sm ">
+                            Hisar,Haryana
+                        </td>
+                        <td class="px-4 py-2">
+                            7k
+                        </td>
+
+                        <td class="flex items-center ">
+                            <div class="flex -ml-4">
+                                <div (click)="showpop()" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg
+                                        width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.9998 17.5013L17.9998 22.5013M17.9998 17.5013L22.9998 22.5013M28.8332 20.0013C28.8332 24.6037 25.1022 28.3346 20.4998 28.3346C15.8975 28.3346 12.1665 24.6037 12.1665 20.0013C12.1665 15.3989 15.8975 11.668 20.4998 11.668C25.1022 11.668 28.8332 15.3989 28.8332 20.0013Z"
+                                            stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div routerLink="/client/Edit-client" class="font-medium text-red-600 dark:text-red-500 hover:underline"><svg
+                                        width="45" height="44" viewBox="0 0 45 44" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.5 13.0003C27.7626 12.7377 28.0744 12.5293 28.4176 12.3872C28.7608 12.245 29.1286 12.1719 29.5 12.1719C29.8714 12.1719 30.2392 12.245 30.5824 12.3872C30.9256 12.5293 31.2374 12.7377 31.5 13.0003C31.7626 13.2629 31.971 13.5747 32.1131 13.9179C32.2553 14.2611 32.3284 14.6289 32.3284 15.0003C32.3284 15.3717 32.2553 15.7395 32.1131 16.0827C31.971 16.4259 31.7626 16.7377 31.5 17.0003L18 30.5003L12.5 32.0003L14 26.5003L27.5 13.0003Z"
+                                            stroke="#667085" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class=" border-b my-4" style="background: rgba(180, 191, 233, 0.2);">
+        </div>
+
+    </div>
+</div>
+
+<!-- --------------------------------------------- POP-UP  DEACTIVE--------------------------------------------------- -->
+
+<div *ngIf="show">
+    <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all ">
+                    <div class="relative p-4 w-full max-w-md h-60 md:h-auto">
+                        <div class="relative bg-white ">
+
+                            <div class="px-6  text-center">
+                                <div class=" mt-1.5">
+                                    <svg class="mx-auto" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4" y="4" width="48" height="48" rx="24" fill="#F6FEF9" />
+                                        <path
+                                            d="M27.9998 24.0002V28.0002M27.9998 32.0002H28.0098M26.2898 18.8602L17.8198 33.0002C17.6451 33.3026 17.5527 33.6455 17.5518 33.9947C17.5508 34.3439 17.6413 34.6873 17.8142 34.9907C17.9871 35.2941 18.2365 35.547 18.5375 35.7241C18.8385 35.9012 19.1806 35.9964 19.5298 36.0002H36.4698C36.819 35.9964 37.1611 35.9012 37.4621 35.7241C37.7631 35.547 38.0124 35.2941 38.1854 34.9907C38.3583 34.6873 38.4488 34.3439 38.4478 33.9947C38.4468 33.6455 38.3544 33.3026 38.1798 33.0002L29.7098 18.8602C29.5315 18.5663 29.2805 18.3233 28.981 18.1547C28.6814 17.9861 28.3435 17.8975 27.9998 17.8975C27.656 17.8975 27.3181 17.9861 27.0186 18.1547C26.7191 18.3233 26.468 18.5663 26.2898 18.8602Z"
+                                            stroke="#344054" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <rect x="4" y="4" width="48" height="48" rx="24" stroke="#ECFAFF"
+                                            stroke-width="8" />
+                                    </svg>
+                                </div>
+                                <p class=" text-lg font-medium leading-6 text-gray-900 mt-3 ">Deactive client?</p>
+                                <p class=" text-center text-sm font-normal text-gray-500 mt-2">Do you want to deactive
+                                    this
+                                    client?</p>
+                                <div class=" flex justify-center mt-4 ">
+                                </div>
+
+                                <button
+                                    class=" text-gray-700 shadow-xs bg-white border border-gray-300 focus:outline-none font-medium rounded-lg text-md px-6 py-2.5 mt-8"
+                                    type="button" data-modal-toggle="popup-modal" (click)="hide()">Cancel
+                                </button>
+                                <button
+                                    class=" text-white bg-purple-700 border border-gray-300 focus:outline-none  font-medium rounded-lg text-md px-6 py-2.5 ml-3 mt-8"
+                                    type="button" data-modal-toggle="popup-modal">
+                                    Deactive
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------POP-UP ACTIVE ------------------------- -->
+
+<div class="relative z-10 " aria-labelledby="modal-title" role="dialog" aria-modal="true" *ngIf="down">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+    <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all ">
+                <div class="relative p-4 w-full max-w-md h-60 md:h-auto">
+                    <div class="relative bg-white ">
+
+                        <div class="px-6  text-center">
+                            <div class=" mt-1.5">
+                                <svg class="mx-auto" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="48" height="48" rx="24" fill="#F6FEF9" />
+                                    <path
+                                        d="M27.9998 24.0002V28.0002M27.9998 32.0002H28.0098M26.2898 18.8602L17.8198 33.0002C17.6451 33.3026 17.5527 33.6455 17.5518 33.9947C17.5508 34.3439 17.6413 34.6873 17.8142 34.9907C17.9871 35.2941 18.2365 35.547 18.5375 35.7241C18.8385 35.9012 19.1806 35.9964 19.5298 36.0002H36.4698C36.819 35.9964 37.1611 35.9012 37.4621 35.7241C37.7631 35.547 38.0124 35.2941 38.1854 34.9907C38.3583 34.6873 38.4488 34.3439 38.4478 33.9947C38.4468 33.6455 38.3544 33.3026 38.1798 33.0002L29.7098 18.8602C29.5315 18.5663 29.2805 18.3233 28.981 18.1547C28.6814 17.9861 28.3435 17.8975 27.9998 17.8975C27.656 17.8975 27.3181 17.9861 27.0186 18.1547C26.7191 18.3233 26.468 18.5663 26.2898 18.8602Z"
+                                        stroke="#344054" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <rect x="4" y="4" width="48" height="48" rx="24" stroke="#ECFAFF"
+                                        stroke-width="8" />
+                                </svg>
+                            </div>
+                            <p class=" text-lg font-medium leading-6 text-gray-900 mt-3 ">Active client?</p>
+                            <p class=" text-center text-sm font-normal text-gray-500 mt-2">Do you want to active this
+                                client?</p>
+                            <div class=" flex justify-center mt-4 ">
+                            </div>
+
+                            <button
+                                class=" text-gray-700 shadow-xs bg-white border border-gray-300 focus:outline-none font-medium rounded-lg text-md px-6 py-2.5 mt-8"
+                                type="button" data-modal-toggle="popup-modal" (click)="hide1()">Cancel
+                            </button>
+                            <button
+                                class=" text-white bg-purple-700 border border-gray-300 focus:outline-none  font-medium rounded-lg text-md px-6 py-2.5 ml-3 mt-8"
+                                type="button" data-modal-toggle="popup-modal">
+                                Active
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- off canvas -->
+<div class="invisible fixed bottom-0 top-0 right-0 z-[1045] flex 
+    max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 
+    ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none" tabindex="-1"
+    id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-te-offcanvas-init>
+    <div class="flex items-center justify-between overflow-x-hidden">
+        <div>
+            <app-client-profile></app-client-profile>
+        </div>
+    </div>
