@@ -1,8 +1,8 @@
 <!-- Navbar -->
 
-<div class="navbar w-full flex justify-between z-30 sticky top-0 py-0">
+<div class="bg-[#0175A2] w-full flex justify-between z-30 sticky top-0 py-0">
   <div class="left">
-    <img src="../../../../assets/Vector (2).png" class="py-1 ml-2" alt="image" width="100px">
+    <img src="../../../../assets/Vector.png" class="py-1 ml-2" alt="image" width="100px">
   </div>
   <div class="right flex justify-center items-center space-x-6 mr-6">
     <svg class="notification w-4" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,151 +15,188 @@
 </div>
 
 <!-- Sidebar -->
-
-<div class="sidebar absolute w-12 top-9 z-0">
-  <div>
-    <ul>
-      <li>
-        <img class="mt-4 p-1 w-9" src="assets/userM.png" alt="">
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/nav-dash.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/dollar.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/nav-noti.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/Nav item base.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/client2.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/client1.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/file.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/Role1.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-4 p-1 w-9" src="../../../../assets/Team1.png"></a>
-      </li>
-
-      <li>
-        <a href="#"><img class="mt-20 p-1 w-9" src="../../../../assets/exit.png"></a>
-      </li>
-
-      <li class="version font-medium text-xs flex items-center pl-1">V 1.20</li>
-    </ul>
-  </div>
+<div class="flex">
+  <app-sidebar></app-sidebar>
 </div>
 
+
+
+
 <!--Body-->
-<div class="bodycolor">
-  <div class="w-60 h-5 font-medium text-sm py-10">&larr;Back to Master data Management</div>
-  <div>Add Job Role Data Field</div>
+<div class="ml-10 md:ml-8 flex justify-center xl:mr-0 lg:ml-10 lg:mr-0 md:mr-0 sm:ml-16 sm:mr-16">
+
+  <!--Outer Text-->
+  <div class="w-[90%] bg-[#e9ebee] xl:w-[90%] lg:w-[90%] md:w-[90%]">
+    <div
+      class="text-xs min-[450px]:py-4 sm:ml-0 lg:ml-0 md:ml-0 xl:py-8 lg:w-60 lg:pt-8 lg:pb-4 md:py-4 sm:py-2 font-medium sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+      &larr;Back to Master data Management</div>
+    <div
+      class="xl:ml-0 lg:ml-0 md:ml-0 xl:text-3xl lg:w-81 lg:h-9 lg:text-2xl md:text-xl sm:ml-0 sm:text-lg inline font-semibold text-gray-900">
+      Add Job Role Data Field</div>
+
+    <!--Buttons-->
+    <div
+      class="flex mt-2 justify-end min-[450px]:mr-0 min-[450px]:-mt-8 xl:-mt-11 xl:mr-0 lg:-mt-14 sm:mr-0 lg:mr-0 md:-mt-10 md:mr-0 sm:-mt-8">
+      <button
+        class="w-12 px-2 text-[9px] h-5 mr-2 flex flex-row items-center box-border content-center font-medium rounded-lg xl:text-sm lg:text-sm md:text-sm sm:text-xs xl:mr-3 xl:py-3 xl:px-6 xl:w-24 xl:h-8 lg:mr-3 lg:py-3 lg:px-6 lg:w-24 lg:h-8 md:w-20 md:h-6 md:px-4 md:mr-3 sm:w-16 sm:h-5 sm:px-3 sm:mr-2 bg-white border-1 border-solid border-gray-300 shadow-md text-gray-700">
+        Cancel
+      </button>
+      <button
+        class="text-[9px] w-12 px-3 h-5 flex flex-row items-center box-border content-center xl:py-3 xl:px-8 xl:w-24 xl:h-8 lg:py-3 lg:px-8 lg:w-24 lg:h-8 md:w-20 md:h-6 md:px-6 sm:w-16 sm:h-5 sm:px-5 border-1 border-solid border-gray-300 rounded-lg shadow-md text-white font-medium xl:text-sm lg:text-sm md:text-sm sm:text-xs bg-[#0175A2]">
+        Save
+      </button>
+    </div>
+
+    <!--Container-->
+    <div
+      class="w-auto mt-4 mb-10 p-3 min-[450px]:mt-6 min-[550px]:w-[450px] sm:w-auto md:w-auto lg:w-full xl:w-full sm:mt-10 sm:mb-10 xl:mt-10 lg:mt-16 md:mb-10 md:mt-10 xl:p-6 lg:p-6 md:p-6 sm:p-6 bg-white rounded-lg shadow-md">
+      <div
+        class="text-sm xl:w-40 xl:h-7 min-[550px]:ml-8 sm:ml-0 md:ml-0 lg:ml-0 xl:ml-0 min-[550px]:mb-4 font-semibold xl:text-2xl lg:text-xl md:text-lg sm:text-base text-gray-800">
+        New Job Role</div>
+      <div
+        class="text-xs mt-2 mb-2 xl:w-16 xl:h-7 min-[550px]:ml-8 sm:ml-0 md:ml-0 lg:ml-0 xl:ml-0 min-[550px]:mb-4 xl:mt-10 xl:mb-10 font-medium xl:text-xl md:text-base sm:text-sm sm:mt-3 sm:mb-3 md:mt-6 md:mb-6 lg:text-lg lg:mt-8 lg:mb-8 text-gray-900">
+        Details</div>
 
 
+      <!--Input Fields-->
+      <div
+        class="grid gap-2 xl:gap-10 min-[550px]:ml-8 sm:ml-0 md:ml-0 lg:ml-0 xl:ml-0 min-[550px]:gap-5 lg:gap-12 md:gap-6 sm:gap-5 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2">
 
-  <!-- <div class="flex justify-end">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
-      Button 1
-    </button>
-    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-      Button 2
-    </button>
-  </div> -->
-  
+        <!--Title Input Field-->
 
-  <!-- <div class="flex justify-center">
-    <div class="w-full md:w-3/4 mt-8 lg:w-10/12  p-6 bg-white rounded-lg shadow-md">
-
-      <div class="w-40 h-7 ml-7 font-semibold text-2xl text-gray-800">New Job Role</div>
-      <div class="w-16 h-7 mt-10 mb-10 font-medium text-xl text-gray-900">Details</div>
-
-      <div class="grid gap-4 lg:grid-cols-3 md:grid-rows-8">
         <div>
-          <label class="w-12 h-6 font-semibold text-base text-gray-800" for="title">Title</label>
-          <input class="box-border mt-4 px-3 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
+          <label class="block font-semibold text-xs xl:text-base lg:text-sm md:text-sm sm:text-xs text-gray-800"
+            for="title">Title</label>
+          <input
+            class="box-border min-[450px]:w-[300px] text-xs xl:text-lg lg:text-md lg:text-md mt-2 w-48 h-8 px-2 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-3 xl:px-3 lg:px-3 md:px-3 sm:px-3 xl:w-80 xl:h-12 lg:w-64 lg:h-12 md:w-[300px] md:h-12 sm:w-81 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
             id="title" type="text" placeholder="eg:Account Admin">
         </div>
 
+        <!--Code Input Field-->
+
         <div>
-          <label class="w-44 h-6 font-semibold text-base text-gray-800" for="title">Code(Auto Generated)</label><a
-            href="#" class="w-22 h-5 font-medium ml-16 text-sm items-center editmanualtext">Edit Manually</a>
-          <input class="box-border mt-4 px-3 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
+          <label class="font-semibold text-xs xl:text-base lg:text-sm md:text-sm sm:text-xs text-gray-800"
+            for="title">Code(Auto Generated)</label><a href="#"
+            class="font-medium text-[10px] ml-[10px] md:ml-[67px] xl:ml-16 lg:ml-4 xl:text-sm lg:text-sm md:text-xs sm:text-xs sm:ml-[150px] items-center editmanualtext text-[#0175A2]">Edit
+            Manually</a><br>
+          <input
+            class="box-border text-xs min-[450px]:w-[300px] xl:text-lg lg:text-md mt-2 w-48 h-8 px-2 md:block xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xl:px-3 lg:px-3 md:px-3 sm:px-3 lg:w-64 md:w-[300px] sm:w-81 xl:w-80 xl:h-12 lg:h-12 md:h-12 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
             id="title" type="text" placeholder="eg:0001">
         </div>
 
+        <!--Created on Input Field-->
+
         <div>
-          <label class="w-22 h-6 font-semibold text-base text-gray-800" for="title">Created On</label>
-          <input class="box-border mt-4 px-3 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
+          <label class="font-semibold text-xs xl:text-base lg:text-sm md:text-sm sm:text-xs block text-gray-800"
+            for="title">Created On</label>
+          <input
+            class="box-border text-xs min-[450px]:w-[300px] xl:text-lg lg:text-md mt-2 w-48 h-8 px-2 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xl:px-3 lg:px-3 md:px-3 sm:px-3 lg:w-64 xl:w-80 md:w-[300px] sm:w-81 xl:h-12 lg:h-12 md:h-12 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
             id="title" type="date" placeholder="19/05/2013">
         </div>
 
+        <!--Description Input Field-->
+
         <div>
-          <label class="w-22 h-6 font-semibold text-base text-gray-800" for="title">Description</label>
+          <label class="w-22 h-6 text-xs font-semibold xl:text-base lg:text-sm md:text-sm sm:text-xs text-gray-800"
+            for="title">Description</label>
           <input
-            class="box-border flex items-center mt-4 px-3 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
+            class="mt-2 w-48 h-8 px-2 text-xs min-[450px]:w-[300px] xl:text-lg lg:text-md box-border flex items-center xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xl:px-3 lg:px-3 md:px-3 sm:px-3 xl:w-80 lg:w-64 md:w-[300px] sm:w-81 xl:h-12 lg:h-12 md:h-12 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
             id="title" type="text" placeholder="eg:Account Admin">
         </div>
 
+        <!--Source Name Input Field-->
+
         <div>
-          <label class="w-28 h-6 font-semibold text-base text-gray-800" for="title">Source Name</label>
+          <label class="w-28 h-6 text-xs font-semibold xl:text-base lg:text-sm md:text-sm sm:text-xs text-gray-800"
+            for="title">Source Name</label>
           <input
-            class="box-border flex items-center mt-4 px-3 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
+            class="mt-2 w-48 h-8 px-2 text-xs min-[450px]:w-[300px] xl:text-lg lg:text-md box-border flex items-center xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xl:px-3 lg:px-3 md:px-3 sm:px-3 xl:w-80 lg:w-64 md:w-[300px] sm:w-81 xl:h-12 lg:h-12 md:h-12 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
             id="title" type="text" placeholder="eg:Google">
         </div>
 
+        <!--Source Type Input Field-->
+
         <div>
-          <label class="w-28 h-6 font-semibold text-base text-gray-800" for="title">Source Type</label>
+          <label class="w-28 h-6 text-xs font-semibold xl:text-base lg:text-sm md:text-sm sm:text-xs text-gray-800"
+            for="title">Source Type</label>
           <select
-            class="box-border flex items-center mt-4 px-3 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg">
+            class="box-border mt-2 w-48 text-xs min-[450px]:w-[300px] xl:text-lg lg:text-md h-8 px-2 flex items-center xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xl:px-3 lg:px-3 md:px-3 sm:px-3 xl:w-80 lg:w-64 md:w-[300px] sm:w-81 xl:h-12 lg:h-12 md:h-12 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg">
             <option>eg:Manual/Api</option>
           </select>
         </div>
 
+        <!--Skills Input Field-->
+
         <div>
-          <label class="w-28 h-6 font-semibold text-base text-gray-800" for="title">Skills</label>
-          <div class="relative">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg aria-hidden="true" class="w-5 h-5 mt-3 text-gray-500 dark:text-gray-400" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <label class="w-28 h-6 text-xs font-semibold xl:text-base lg:text-sm md:text-sm sm:text-xs text-gray-800"
+            for="title">Skills<span class="text-[#0175A2] ml-1">({{items1.length}})</span></label>
+          <div class="relative mt-4">
+            <div class="absolute inset-y-0 left-0 flex-col items-center pl-3 pointer-events-none">
+              <svg aria-hidden="true" class="w-4 sm:w-5 md:w-5 lg:w-5 xl:w-5 mt-4 text-gray-500 dark:text-gray-400"
+                fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
               </svg>
             </div>
-            <input
-              class="box-border flex items-center mt-4 px-5 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
-              id="search" type="search" placeholder="eg:Google">
+
+            <input #inputField1
+              class="box-border mt-2 text-xs min-[450px]:w-[300px] xl:text-lg lg:text-md w-48 h-8 px-9 flex items-center xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xl:px-9 lg:px-9 md:px-9 sm:px-9 sm:w-81 md:w-[300px] lg:w-64 xl:w-80 xl:h-12 lg:h-12 md:h-12 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
+              placeholder="eg:Google" (keydown)="onKeyDown1($event, inputField1.value)">
+
+            <div class="input-container">
+              <ul
+                class="cursor-text flex items-center flex-wrap overflow-hidden text-xs xl:text-sm lg:text-sm md:text-sm sm:text-sm  font-medium p-1 w-auto"
+                (click)="onChipBarClick()">
+                <li
+                  class="cursor-default list-none pt-1 pb-1 pr-3 pl-3 m-1 inline-flex items-center rounded-2xl bg-[#0175A2] text-white border-1 border-solid"
+                  *ngFor="let item of items1; let i= index">
+                  <span class="chip-label">
+                    {{item}}
+                  </span>
+                  <span *ngIf="removable"
+                    class="material-icons text-xs xl:text-lg lg:text-lg md:text-md sm:text-lg cursor-pointer ml-1"
+                    (click)="removeItem1(i)">
+                    clear
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div>
-          <label class="w-28 h-6 font-semibold text-base text-gray-800" for="title">Employment Type</label>
-          <select
-            class="box-border flex items-center mt-4 px-3 w-80 h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg">
-            <option>eg:Full-time</option>
-          </select>
-        </div>
+        <!--Employment Type Input Field-->
 
+        <div>
+          <label class="w-28 h-6 text-xs font-semibold xl:text-base lg:text-sm md:text-sm sm:text-xs text-gray-800"
+            for="title">Employment Type<span class="text-[#0175A2] ml-1">({{items2.length}})</span></label>
+          <input #inputField2
+            class="box-border mt-2 text-xs min-[450px]:w-[300px] xl:text-lg lg:text-md w-48 h-8 px-9 flex items-center xl:mt-4 lg:mt-4 md:mt-4 sm:mt-4 xl:px-9 lg:px-9 md:px-9 sm:px-9 sm:w-81 md:w-[300px] lg:w-64 xl:w-80 xl:h-12 lg:h-12 md:h-12 sm:h-12 bg-gray-50 border-1 border-solid border-gray-300 rounded-lg"
+            placeholder="eg:Google" (keydown)="onKeyDown2($event, inputField2.value)">
+
+          <div class="input-container">
+            <ul
+              class="cursor-text flex items-center flex-wrap overflow-hidden text-xs xl:text-sm lg:text-sm md:text-sm sm:text-sm  font-medium p-1 w-auto"
+              (click)="onChipBarClick()">
+              <li
+                class="cursor-default list-none pt-1 pb-1 pr-3 pl-3 m-1 inline-flex items-center rounded-2xl bg-[#0175A2] text-white border-1 border-solid"
+                *ngFor="let item of items2; let i= index">
+                <span class="chip-label">
+                  {{item}}
+                </span>
+                <span *ngIf="removable"
+                  class="material-icons text-xs xl:text-lg lg:text-lg md:text-md sm:text-lg cursor-pointer ml-1"
+                  (click)="removeItem2(i)">
+                  clear
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
 
+
     </div>
-  </div> -->
+  </div>
 </div>
